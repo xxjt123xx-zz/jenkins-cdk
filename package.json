@@ -1,0 +1,26 @@
+{
+  "name": "jenkins-cdk",
+  "version": "0.1.0",
+  "bin": {
+    "jenkins-cdk": "bin/jenkins-cdk.js"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "watch": "tsc -w",
+    "start": "cdk deploy -a \"npx ts-node index.ts\"",
+    "synth": "cdk synth -a \"npx ts-node index.ts\"",
+    "bootstrap": "cdk bootstrap"
+  },
+  "devDependencies": {
+    "@types/node": "10.17.27",
+    "aws-cdk": "^2.16.0",
+    "aws-cdk-lib": "^2.16.0",
+    "ts-node": "^9.0.0",
+    "typescript": "~3.9.7"
+  },
+  "dependencies": {
+    "constructs": "^10.0.0",
+    "dotenv": "^16.0.0",
+    "source-map-support": "^0.5.16"
+  }
+}
